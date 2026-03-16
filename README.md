@@ -37,21 +37,6 @@ Không có lựa chọn nào là vô nghĩa.
 
 ---
 
-## Kết cục (8 endings)
-
-| # | Tên | Điều kiện |
-|---|-----|-----------|
-| 1 | Terrible Ending | Từng giết vua hoặc công chúa |
-| 2 | Bad Ending | Không bao giờ giúp công chúa trốn thoát |
-| 3 | Happy Ending | Điều tra vua ≥ 2 lần + công chúa có cảm tình |
-| 4 | Normal Ending | Điều tra vua ≥ 2 lần, công chúa bình thường |
-| 5 | Good Ending | Công chúa có cảm tình, điều tra vua < 2 lần |
-| 6 | True Ending | Day 8 chọn đi xuyên rừng — sự thật được hé lộ |
-| 7 | Luck Ending | Day 1 chọn đi xuyên rừng ngay từ đầu |
-| 8 | Die Ending | Chết trong minigame vượt chướng ngại vật |
-
----
-
 ## Công nghệ
 
 - **Engine:** Ren'Py
@@ -108,21 +93,6 @@ Every choice accumulates across 8 days and shapes the final outcome:
 - Help or betray?
 
 No choice is meaningless.
-
----
-
-## Endings (8 total)
-
-| # | Name | Condition |
-|---|------|-----------|
-| 1 | Terrible Ending | Killed the king or princess at any point |
-| 2 | Bad Ending | Never helped the princess escape |
-| 3 | Happy Ending | Investigated king ≥ 2 times + princess has affection |
-| 4 | Normal Ending | Investigated king ≥ 2 times, princess neutral |
-| 5 | Good Ending | Princess has affection, investigated king < 2 times |
-| 6 | True Ending | Choose to go through the forest on Day 8 — the real truth |
-| 7 | Luck Ending | Choose to go through the forest on Day 1 |
-| 8 | Die Ending | Die during the platforming minigame |
 
 ---
 

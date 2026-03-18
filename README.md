@@ -1,5 +1,5 @@
 # Eight Days of Fate
-### Hiện chưa hoàn thành 
+* Hiện chưa hoàn thành 
 > *"Trốn tránh chưa từng là cách giải quyết vấn đề."*
 
 Một visual novel được tạo bằng **Ren'Py** về một dũng sĩ bị mắc kẹt trong vòng lặp thời gian — và 8 ngày để tìm ra sự thật.

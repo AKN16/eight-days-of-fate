@@ -7,29 +7,33 @@ label true:
     "Con đường xuyên rừng dẫn đến một nơi không ngờ tới."
     "Lâu đài ác ma. Nhưng không có công chúa, không có tiếng kêu cứu."
 
-    # ── LÂU ĐÀI ÁC MA (nội thất) → dungeon ──
+    # ── LÂU ĐÀI ÁC MA → dungeon ──
     scene bg_dungeon with fade
 
-    "Chỉ có Zagan — đang ngồi trên ngai, trước mặt là vô số mảnh hình ảnh lung linh."
+    "Chỉ có Zagan — đang ngồi trên ngai, trước mặt là vô số mảnh hình ảnh từ những vòng lặp trước."
 
     show devil_see_and_drink_tea
 
-    devil "À. Ngươi chọn đúng con đường rồi."
-    hero "Tất cả — vòng lặp, công chúa, vua — tất cả là do ngươi?"
-    devil "Ta không nói dối bao giờ."
-    devil "Ta chỉ tạo ra sân khấu. Còn diễn như thế nào là do các ngươi tự chọn."
-    hero "Công chúa. Cô ấy không bị bắt. Vua đã bán cô ấy cho ngươi."
-    devil "(không phủ nhận) Vua muốn vàng. Ta muốn xem. Mọi người đều có được điều mình muốn."
-    hero "Trừ công chúa."
-    devil "..."
-    devil "(lần đầu tiên ngừng lại) Đó là điều thú vị nhất trong vòng này."
+    devil "Cùng uống một ly trà nhé, dũng sĩ."
+    hero "Tất cả...tất cả là do ngươi?"
+    devil "Ta chưa từng phủ nhận....hmm...ta cũng chưa từng thừa nhận."
+    devil "Con đường này là do nhân loại cấc ngươi từ lựa chọn, đừng có mà đỗ lỗi cho ta."
+    hero "...."
+    devil "Ừ đúng rồi đó. Những thứ ngươi đang nghĩ đều là thật...dũng sĩ... à không phải là "The Fool"."
+    hero "...Có ý gì đây?"
+    devil "...(không quan tâm)"
 
     hero "Ta sẽ kết thúc chuyện này."
-    devil "Được thôi. Ta đã xem đủ vòng này rồi."
+    devil "Được thôi."
+
+    jump attack
+
 
     "Trận chiến cuối cùng."
     "Lần này không phải để cứu công chúa. Lần này là để thoát thật sự."
-    "Zagan thua — hoặc chọn thua."
+    hero "Ta thắng rôi...Không...ta tự do rồi.."
+
+    "[hero_name] chạy đi khỏi vùng đất này. Không quan tâm bất kì điều gì khác nữa."
 
     # ── VÙNG ĐẤT MỚI → đen rồi fade ──
     scene black with dissolve
@@ -41,9 +45,8 @@ label true:
     show devil_smirk
 
     "..."
-    "Biến số thú vị nhất từ trước đến giờ."
-    "Nhưng mọi vòng lặp đều sẽ có biến số tiếp theo."
-    "Ta sẽ không vội."
+    "Tạm biệt... và hẹn gặp lại...[hero_name]"
+
 
     "END."
     return

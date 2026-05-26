@@ -21,7 +21,7 @@ label next_day_7:
     hide hero_normal
 
     "Ngày cuối. [hero_name] bước vào thành lần cuối."
-    hero "Hôm nay phải kết thúc chuyện này."
+    hero "......."
 
     menu:
         "Điều tra vua":
@@ -38,8 +38,8 @@ label to_princess_day_7:
 
     show king_normal at right
     show hero_normal at left
-    king "Hỡi dũng sĩ phương x—"
-    hero "Tôi nhận nhiệm vụ."
+    king "H—"
+    hero "Nhận."
     hide king_normal
     hide hero_normal
     "Dũng sĩ rời đi trước khi vua kịp nói hết câu."
@@ -56,9 +56,9 @@ label next_day_7_2:
 
     show devil_normal
 
-    devil "(không buồn đứng dậy) À, đến rồi."
-    hero "Hôm nay ta cần nói chuyện với công chúa."
-    devil "Đánh ta trước. Sau đó muốn làm gì thì làm."
+    devil "....(lười biếng)"
+    hero "...."
+    jump attack
 
     show princess_normal
 

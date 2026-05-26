@@ -54,6 +54,7 @@ label next_day_4_2:
     devil "(không buồn đứng dậy) À, đến rồi."
     hero "Hôm nay ta cần nói chuyện với công chúa."
     devil "Đánh ta trước. Sau đó muốn làm gì thì làm."
+    jump attack
 
     show princess_normal
 

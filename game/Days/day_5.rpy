@@ -36,7 +36,7 @@ label to_princess_day_5:
 
     show king_normal at right
     show hero_normal at left
-    king "Hỡi dũng sĩ phương x—"
+    king "Hỡi dũng sĩ ph—"
     hero "Tôi nhận nhiệm vụ."
     hide king_normal
     hide hero_normal
@@ -53,13 +53,18 @@ label next_day_5_2:
 
     show devil_normal
 
-    devil "(không buồn đứng dậy) À, đến rồi."
-    hero "Hôm nay ta cần nói chuyện với công chúa."
-    devil "Đánh ta trước. Sau đó muốn làm gì thì làm."
+    devil "(không buồn đứng dậy)... À, đến rồi."
+    hero "Ta cần nói chuyện với công chúa."
+    devil "Đánh ta trước!"
+    jump attack
 
     show princess_normal
 
     "Sau trận chiến."
+
+
+
+    if 
 
     princess "Ngươi nhìn ta như thể đang tìm kiếm gì đó."
     hero "Ta cần biết — ngươi có phải nguyên nhân của vòng lặp không?"

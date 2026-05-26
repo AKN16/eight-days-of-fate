@@ -1,4 +1,5 @@
 label king_is_dead_1:
+    $ kill += 1
     # ── CUNG ĐIỆN → palace hall ──
     scene bg_palace_hall with fade
 

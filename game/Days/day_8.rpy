@@ -17,16 +17,17 @@ label day_8:
 label day_8_next:
     hide hero_normal
     if kill >= 1:
-        jump terrible
-
-    elif investigated_king >= 2 and princess_affection < 3:
-        jump normal
-
-    elif princess_affection >= 3 and helped_princess_escape >= 1:
-        if investigated_king >= 2:
-            jump happy
+        if princess_affection < 0:
+            jump terrible
         else:
-            jump good
-
+            jump bad
     else:
-        jump bad
+        if princess_affection < 3:
+            if investigated_king >= 2: 
+                jump normal
+        elif princess_affection >= 3 and helped_princess_escape >= 1:
+            if investigated_king >= 2:
+                jump happy
+            else:
+                jump good
+

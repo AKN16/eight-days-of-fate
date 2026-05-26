@@ -1,6 +1,6 @@
 label princess_is_dead_1:
     $ kill += 1
-    $ princess_affection -= 1
+    $ princess_affection -= 100
 
     # ── LÂU ĐÀI ÁC MA (nội thất) → dungeon ──
     scene bg_dungeon with fade

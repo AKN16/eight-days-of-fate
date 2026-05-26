@@ -36,3 +36,9 @@ image bg_dungeon = "images/backgrounds/dungeon_1920.png"
 # royal_theme.ogg → fantasy hoành tráng → dùng cho cung điện & ngày mới
 define audio.music_myst  = "audio/music/myst.ogg"
 define audio.music_royal = "audio/music/royal_theme.ogg"
+
+# ── SFX NHÂN VẬT ──
+define audio.sfx_hero     = "audio/sfx/sfx_hero.ogg"
+define audio.sfx_king     = "audio/sfx/sfx_king.ogg"
+define audio.sfx_princess = "audio/sfx/sfx_princess.ogg"
+define audio.sfx_devil    = "audio/sfx/sfx_devil.ogg"

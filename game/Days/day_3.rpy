@@ -23,8 +23,8 @@ label next_day_3:
     play music audio.music_royal fadein 1.0
     hide hero_normal
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Hỡi dũng sĩ phương xa, hãy cứu lấy đứa con tội nghiệp—"
     hero "Thần hiểu rồi. Thần sẽ đi."
     king "À... ừ, tốt lắm. Phần thưởng—"
@@ -33,7 +33,7 @@ label next_day_3:
     # ── CUNG ĐIỆN / THƯ VIỆN → palace inner ──
     scene bg_palace_inner with fade
     hide king_normal
-
+    hide hero_normal
     "[hero_name] đi thẳng đến thư viện hoàng gia."
     "Phải tìm ra nguyên nhân của vòng lặp này."
     jump libary
@@ -62,7 +62,7 @@ label next_day_3_2:
     princess "..."
     princess "Lần này ngươi có vẻ... khác."
     princess "(quan sát) Ngươi biết mình đang lặp lại không?"
-    devil "Ah. Câu chuyện bắt đầu thú vị rồi. Nào, đừng để ta chờ."
+    devil "...Nào, đừng để ta chờ."
     jump attack
 
 label next_day_3_3:
@@ -81,8 +81,8 @@ label next_day_3_3:
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Xuất sắc! Dũng sĩ lại lập công! Như ta đã kỳ vọng—"
     king "Phần thưởng lần này — ngươi sẽ cưới công chúa!"
     hero "Vàng. Chỉ cần vàng."
@@ -94,7 +94,7 @@ label next_day_3_3:
     # ── RA NGOÀI / MÀN ĐÊM → đen ──
     scene black with fade
     hide king_normal
-
+    hide hero_normal
     "Dũng sĩ nhận vàng, rời thành."
     "Chưa kịp ra khỏi cổng thì nhóm người lạ mặt xuất hiện."
     "Ma thuật ru ngủ. Túi vàng biến mất."

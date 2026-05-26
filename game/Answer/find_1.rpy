@@ -28,7 +28,7 @@ label find_1:
     scene bg_devil_castle with fade
     play music audio.music_myst fadein 1.5
 
-    "Nhìn về phía lâu đài ác ma. Có ánh lửa."
+    "Nhìn về phía lâu đài ác ma. Có ánh lửa...và khói...mùi thịt cháy..."
     hero "..."
 
     scene black with dissolve

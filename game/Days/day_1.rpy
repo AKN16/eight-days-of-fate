@@ -16,9 +16,8 @@ label day_1:
 
 label next_day_1:
 
-    # ── TRONG THÀNH → nền đen ──
+    # ── TRONG THÀNH → dialogue bình thường, chưa bật điều khiển ──
     scene black with fade
-    hide hero_normal
 
     "[hero_name] bước vào thành. Một tờ thông báo dán trên cổng chính."
     hero "Giải cứu công chúa bị ác ma bắt giữ. Phần thưởng hậu hĩ."
@@ -29,16 +28,18 @@ label next_day_1:
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Hỡi dũng sĩ phương xa! Ngươi đến vào đúng lúc."
     king "Đứa con tội nghiệp của ta đang bị tên ác ma giam cầm. Mỗi ngày trôi qua, ta chỉ biết cầu trời..."
     king "Hãy cứu lấy con ta. Phần thưởng sẽ xứng đáng với công sức."
     hero "Thần xin nhận lệnh."
 
-    # ── NGÃ BA ĐƯỜNG → nền đen ──
+    # ── NGÃ BA ĐƯỜNG → bật điều khiển tại đây ──
     scene black with fade
     hide king_normal
+    hide hero_normal
+
 
     "[hero_name] lên đường đến lâu đài ác ma."
     "Đi đến ngã ba đường."
@@ -78,14 +79,14 @@ label next_day_1_3:
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Ha! Dũng sĩ quả nhiên không phụ lòng ta! Xuất sắc, xuất sắc lắm!"
     king "Phần thưởng xứng đáng nhất mà ta có thể ban — ngươi sẽ được cưới công chúa!"
     hero "Thần không—"
     king "Không cần khiêm tốn! Đây là vinh dự tột bậc! Hãy mở tiệc!"
 
-    show princess_normal
+    show princess_normal at center
 
     princess "(thì thầm) Còn nhớ cách thứ hai ta nói không?"
     princess "(thì thầm) Kết hôn với người đang sở hữu tài sản đó."

@@ -3,11 +3,12 @@ label king_is_dead_1:
     scene bg_palace_hall with fade
 
     "Dũng sĩ không cần suy nghĩ nhiều."
-    show king_normal
+    show king_normal at right
+    show hero_normal at left
     king "Ngươi muốn—"
     "Xong."
     hide king_normal
-
+    hide hero_normal
     # ── TRONG THÀNH / PHÁP TRƯỜNG → đen ──
     scene black with fade
     play music audio.music_myst fadein 1.0

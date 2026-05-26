@@ -37,8 +37,8 @@ label next_day_2:
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Ồ, dũng sĩ! Ngươi đến nhận nhiệm vụ giải cứu công chúa?"
     king "Đứa con khốn khổ của ta vẫn đang bị giam cầm. Ngươi là hy vọng duy nhất."
     hero "Vâng. Nhưng phần thưởng — phải là vàng."
@@ -48,7 +48,7 @@ label next_day_2:
     # ── NGÃ BA ĐƯỜNG → nền đen ──
     scene black with fade
     hide king_normal
-
+    hide hero_normal
     "[hero_name] lên đường. Mọi thứ trông quen đến kỳ lạ."
     "Đi đến ngã ba đường."
     jump long_or_short_road
@@ -89,8 +89,8 @@ label next_day_2_3:
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Dũng sĩ trở về! Ta đã nói mà, ngươi nhất định sẽ thành công!"
     king "Vàng — ta sẽ thưởng vàng như đã hứa. Và thêm một điều nữa—"
     king "Ta gả công chúa cho ngươi!"

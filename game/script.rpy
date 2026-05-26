@@ -9,47 +9,21 @@ default helped_princess_escape = 0
 default passed_crossroad = False
 default royal_area = False
 
-# ===== PLATFORM GAME VARIABLES =====
-default player_x = 300
-default player_y = 0
-default v_y = 0
-default gravity = 2
-default on_ground = False
 
-define ground_y = 420
-define player_h = 120
-
-
-define hero = Character("[hero_name]")
-define king = Character("Nexia", color="#f0e32d")
-define princess = Character("Công chúa", color="#ff65a5")
-define devil = Character("Zagan", color="#D73535")
-
-
-# Image definitions đã chuyển sang characters.rpy và backgrounds.rpy
 
 
 init python:
-    def update_player():
-        global player_y, v_y, on_ground
+    def make_sfx_callback(sfx_path):
+        def cb(event, interact=True, **kwargs):
+            if event == "begin":
+                renpy.sound.play(sfx_path, channel="voice")
+        return cb
 
-        v_y += gravity
-        player_y += v_y
+define hero     = Character("[hero_name]",                  callback=make_sfx_callback("audio/sfx/sfx_hero.ogg"))
+define king     = Character("Nexia",     color="#f0e32d",   callback=make_sfx_callback("audio/sfx/sfx_king.ogg"))
+define princess = Character("Công chúa", color="#ff65a5",   callback=make_sfx_callback("audio/sfx/sfx_princess.ogg"))
+define devil    = Character("Zagan",     color="#D73535",    callback=make_sfx_callback("audio/sfx/sfx_devil.ogg"))
 
-        if player_y + player_h >= ground_y:
-            player_y = ground_y - player_h
-            v_y = 0
-            on_ground = True
-        else:
-            on_ground = False
-
-        renpy.restart_interaction()
-
-    def jump():
-        global v_y, on_ground
-        if on_ground:
-            v_y = -20
-            on_ground = False
 
 
 screen platform_game():
@@ -68,6 +42,7 @@ label start:
                 "Giỡn mặt hả??? "
             else:
                 "Bạn chưa nhập tên. Vui lòng nhập tên để tiếp tục."
+
     jump day_1
 
 

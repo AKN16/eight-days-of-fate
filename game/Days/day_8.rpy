@@ -11,7 +11,7 @@ label day_8:
     menu:
         "Đi vào rừng":
             jump true
-        "đi vào thành":
+        "Đi vào thành":
             jump day_8_next
 
 label day_8_next:
@@ -20,7 +20,7 @@ label day_8_next:
         jump terrible
 
     elif investigated_king >= 2 and princess_affection < 3:
-        jump ending_normal
+        jump normal
 
     elif princess_affection >= 3 and helped_princess_escape >= 1:
         if investigated_king >= 2:

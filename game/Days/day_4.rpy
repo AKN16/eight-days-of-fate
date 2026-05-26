@@ -24,23 +24,27 @@ label next_day_4:
 
     menu:
         "Điều tra vua":
-            jump to_king
+            jump to_king_day_4
         "Điều tra công chúa":
-            jump to_princess
+            jump to_princess_day_4
 
-label to_princess:
+label to_princess_day_4:
     # ── CUNG ĐIỆN → palace hall (lướt qua) ──
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 0.5
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Hỡi dũng sĩ phương x—"
     hero "Tôi nhận nhiệm vụ."
     hide king_normal
-
+    hide hero_normal
     "Dũng sĩ rời đi trước khi vua kịp nói hết câu."
+    "Đi đến ngã ba đường."
+    jump long_or_short_road
 
+
+label next_day_4_2:
     # ── LÂU ĐÀI ÁC MA (nội thất) → dungeon ──
     scene bg_dungeon with fade
     play music audio.music_myst fadein 1.5
@@ -68,15 +72,15 @@ label to_princess:
         "Giúp công chúa trốn thoát":
             jump helped_princess_escape_1
 
-label to_king:
+label to_king_day_4:
     $ investigated_king += 1
 
     # ── CUNG ĐIỆN → palace hall ──
     scene bg_palace_hall with fade
     play music audio.music_royal fadein 1.0
 
-    show king_normal
-
+    show king_normal at right
+    show hero_normal at left
     king "Hỡi dũng sĩ phương xa, đứa con tội nghiệp—"
     hero "Tôi muốn hỏi thêm về công chúa trước khi nhận lệnh."
     king "Ồ? Ừ... tất nhiên. Hỏi đi."
